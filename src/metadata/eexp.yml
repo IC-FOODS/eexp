@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/eexp
+
+idspace: EEXP
+base_url: /obo/eexp
+
+products:
+- eexp.owl: https://raw.githubusercontent.com/adhollander/extension-expertise-ontology/master/eexp.owl
+- eexp.obo: https://raw.githubusercontent.com/adhollander/extension-expertise-ontology/master/eexp.obo
+
+term_browser: ontobee
+example_terms:
+- EEXP_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/adhollander/extension-expertise-ontology/v
+
+- prefix: /tracker/
+  replacement: https://github.com/adhollander/extension-expertise-ontology/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/EEXP?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/adhollander/extension-expertise-ontology/master/

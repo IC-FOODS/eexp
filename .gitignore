@@ -1,0 +1,7 @@
+*.tmp
+src/ontology/mirror
+src/ontology/mirror/*
+src/ontology/eexp.obo
+src/ontology/eexp.owl
+semantic.cache
+bin/
